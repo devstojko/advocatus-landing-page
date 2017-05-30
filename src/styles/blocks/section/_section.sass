@@ -1,0 +1,38 @@
+.section
+
+  &--light
+    background-color: $section--bck-light
+
+  &--graphite
+    background-color: $section--bck-graphite
+
+  &__wrapper
+    margin: 0 auto
+    width: 90%
+
+  &__header
+    border-left: 2px solid $border-color--accent
+    padding-left: 20px
+    position: relative
+
+    &::before
+      color: $section-number--color
+      content: attr(data-section-number)
+      font-family: $font-family--secondary
+      font-size: 150px
+      line-height: .8
+      position: absolute
+
+  &__title
+    color: $text--color-dark
+    font-family: $font-family--primary
+    font-size: 30px
+    font-weight: $font-weight--normal
+    line-height: 1.2
+    margin-bottom: .5em
+
+  &__subtitle
+    color: $text--color-muted
+    font-family: $font-family--primary
+    font-size: 20px
+    font-weight: $font-weight--normal

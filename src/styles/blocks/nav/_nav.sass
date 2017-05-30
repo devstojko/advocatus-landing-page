@@ -1,0 +1,19 @@
+.nav
+  align-items: center
+  display: flex
+
+  &__link
+    border-bottom: 4px solid transparent
+    color: $nav-link--color
+    font-family: $font-family--secondary
+    font-size: $text-size--small
+    font-weight: $font-weight--normal
+    padding: .5em
+    text-decoration: none
+    text-transform: uppercase
+
+    &:not(last-child)
+      margin-right: 1rem
+
+    &:hover
+      border-bottom-color: $nav-link--border-color

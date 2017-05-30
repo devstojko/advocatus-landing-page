@@ -1,0 +1,44 @@
+.burger
+  align-self: center
+  cursor: pointer
+  display: flex
+  height: 24px
+  position: relative
+  width: 32px
+
+  &__line
+    background-color: $burger--color
+    height: 4px
+    position: absolute
+    transition-duration: .30s
+    transition-timing-function: ease-in-out
+    width: 100%
+
+    &--top,
+    &--btm
+      transition-property: transform
+
+    &--top
+      align-self: baseline
+
+    &--middle
+      align-self: center
+      transition-duration: .20s
+      transition-property: transform, opacity
+
+    &--btm
+      align-self: flex-end
+
+  &:hover
+
+    .burger__line
+
+      &--top
+        transform: translateY(250%) rotate(-45deg)
+
+      &--middle
+        opacity: 0
+        transform: rotate(45deg)
+
+      &--btm
+        transform: translateY(-250%) rotate(45deg)
