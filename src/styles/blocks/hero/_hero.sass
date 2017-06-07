@@ -1,3 +1,46 @@
 .hero
+  background-image: linear-gradient(rgba($dark-color, .05), rgba($dark-color, .8) 80%), url('../images/hero-bck.jpg')
+  background-position: center top
+  background-repeat: no-repeat
+  display: flex
   height: calc(100vh - 110px)
-  background: url('../images/hero-bck.jpg')
+  position: relative
+
+  &__content
+    align-items: center
+    align-self: flex-end
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: 0 auto
+    max-width: 970px
+    padding-bottom: 150px
+    width: 90%
+    z-index: 2
+
+  &__header
+    border-left: 2px solid $border-color--accent
+    padding-left: 15px
+
+  &__title
+    color: $text--color-light
+    font-family: $font-family--primary
+    font-size: 45px
+    font-weight: $font-weight--normal
+    letter-spacing: 5px
+    line-height: 1.2
+
+    @include breakpoint(md)
+      font-size: 65px
+
+  &__subtitle
+    color: $text--color-light
+    font-family: $font-family--secondary
+    font-size: 31px
+    font-weight: $font-weight--normal
+    letter-spacing: 2px
+
+  &__cta
+    margin:
+      bottom: 25px
+      top: 25px

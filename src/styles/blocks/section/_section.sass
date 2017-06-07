@@ -1,4 +1,7 @@
 .section
+  padding:
+    bottom: 90px
+    top: 90px
 
   &--light
     background-color: $section--bck-light
@@ -8,31 +11,49 @@
 
   &__wrapper
     margin: 0 auto
+    max-width: 1100px
     width: 90%
 
   &__header
+    color: $text--color-dark
     border-left: 2px solid $border-color--accent
-    padding-left: 20px
+    max-width: 750px
+    padding-left: 15px
     position: relative
 
     &::before
-      color: $section-number--color
+      color: $section-number--color-dark
       content: attr(data-section-number)
       font-family: $font-family--secondary
-      font-size: 150px
-      line-height: .8
+      font-size: 194px
+      line-height: .75
       position: absolute
+      top: 50%
+      transform: translateY(-50%)
+
+    &--light
+      color: $text--color-light
+
+      &::before
+        color: $section-number--color-light
+
+  &__content
+    margin-top: 60px
 
   &__title
-    color: $text--color-dark
+    color: inherit
     font-family: $font-family--primary
     font-size: 30px
     font-weight: $font-weight--normal
     line-height: 1.2
     margin-bottom: .5em
 
+
   &__subtitle
     color: $text--color-muted
     font-family: $font-family--primary
     font-size: 20px
     font-weight: $font-weight--normal
+
+    &--light
+      color: $section-subtitle--color--light

@@ -1,0 +1,43 @@
+.media
+  // display: flex
+  margin: 30px auto
+  max-width: 500px
+  text-align: center
+  @include breakpoint(md)
+    display: flex
+    margin: 30px 0
+    text-align: left
+
+  &__left
+    margin-bottom: 25px
+    @include breakpoint(md)
+      display: flex
+      flex-basis: 20%
+      justify-content: flex-end
+      margin-bottom: 0
+      margin-right: 30px
+
+  &__body
+    @include breakpoint(md)
+      flex-basis: 80%
+
+  &__title
+    color: $media-title--color
+    font-size: $text-size--medium
+    font-weight: $font-weight--normal
+    margin-bottom: 20px
+
+    &--capitalize
+      text-transform: uppercase
+
+  &__text
+    color: $media-text--color
+    font-family: $font-family--secondary
+    font-size: $text-size--small
+    font-weight: $font-weight--normal
+    line-height: 1.5
+
+
+  &__icon
+    color: $media-icon--color-accent
+    display: inline-block

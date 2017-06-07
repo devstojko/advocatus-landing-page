@@ -1,18 +1,18 @@
 // Breakpoints
 
 @mixin breakpoint($point)
-  @if $point == desktop
+  @if $point == lg
     @media (min-width: 75em)
       @content
 
-  @else if $point == laptop
+  @else if $point == md
     @media (min-width: 63em)
       @content
 
-  @else if $point == tablet
+  @else if $point == sm
     @media (min-width: 48em)
       @content
 
-  @else if $point == phablet
+  @else if $point == xs
     @media (min-width: 34em)
       @content

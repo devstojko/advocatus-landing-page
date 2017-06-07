@@ -1,0 +1,18 @@
+.grid
+  display: flex
+  flex-wrap: wrap
+
+  &__col
+
+    &-md-6
+      flex-basis: 100%
+      width: 100%
+      @include breakpoint(md)
+        flex-basis: 50%
+        width: 50%
+
+    &-sm-6
+      @include breakpoint(sm)
+        align-content: center
+        flex-basis: 50%
+        width: 50%
