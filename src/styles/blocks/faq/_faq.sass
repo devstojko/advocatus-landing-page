@@ -1,0 +1,80 @@
+$switch: false
+$faq-list-item-space: 15px
+$faq-content-bck: $accent-color
+$faq-content-radius: 5px
+$faq-content-shadow-color: rgba($tacha, .32)
+
+@mixin bck($color)
+  @if $switch
+    background-color: $color
+
+.faq
+  box-sizing: border-box
+  display: flex
+  flex-wrap: wrap
+
+  &__list
+    @include bck(red)
+    box-sizing: border-box
+    flex-basis: 50%
+    list-style-type: none
+    padding:
+      left: 0
+      right: 30px
+
+  &__list-item
+    display: flex
+    border-bottom: $border-color--accent 2px solid
+    box-sizing: border-box
+    color: $text--color-light
+    cursor: pointer
+    font:
+      family: $font-family--secondary
+      size: $text-size--small
+      weight: $font-weight--bold
+    padding:
+      bottom: $faq-list-item-space
+      top: $faq-list-item-space
+
+    &::after
+      align-self: center
+      color: $text--color-light
+      content: '\f067'
+      font-family: FontAwesome
+      margin-left: auto
+
+    &--selected
+      color: $text--color-accent
+      &::after
+        content: '\f068'
+
+
+  &__content
+    background-color: $faq-content-bck
+    border-radius: $faq-content-radius
+    box-shadow: 0 12px 40px $faq-content-shadow-color
+    box-sizing: border-box
+    display: flex
+    flex-basis: 50%
+    position: relative
+
+  &__item
+    bottom: 0
+    display: flex
+    left: 0
+    margin: 40px
+    padding-right: 20px
+    position: absolute
+    right: 0
+    top: 0
+    overflow: auto
+    &:not(:first-child)
+      display: none
+
+  &__text
+    color: $text--color-dark
+    font:
+      family: $font-family--secondary
+      size: $text-size--small
+      weight: $font-weight--normal
+    line-height: 2.5

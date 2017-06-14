@@ -27,34 +27,38 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader', 'postcss-loader', 'sass-loader']
-          })
-        },
-        {
-          test: /\.(jpe?g|png|gif|svg)$/i,
-          use: [
-            'file-loader?name=images/[name].[ext]',
-            'image-webpack-loader'
-          ]
-        }
-      ]
-    },
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-        // open: true,
-        stats: 'errors-only'
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Project Demo',
-            hash: true,
-            // excludeChunks: ['other'],
-            template: './src/index.html',
-        }),
-        new ExtractTextPlugin({
-            filename: 'app.css',
-            disable: false,
-            allChunks: true
         })
+      },
+      {
+        test: /\.html$/,
+        use: ['html-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader?name=images/[name].[ext]',
+            'image-webpack-loader'
+        ]
+      }
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    // open: true,
+    stats: 'errors-only'
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Project Demo',
+      hash: true,
+      // excludeChunks: ['other'],
+      template: './src/index.html',
+    }),
+    new ExtractTextPlugin({
+      filename: 'app.css',
+      disable: false,
+      allChunks: true
+    })
+  ]
 }

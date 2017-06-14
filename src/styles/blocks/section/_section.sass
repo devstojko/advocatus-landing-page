@@ -11,12 +11,12 @@
 
   &__wrapper
     margin: 0 auto
-    max-width: 1100px
+    max-width: 1170px
     width: 90%
 
   &__header
-    color: $text--color-dark
     border-left: 2px solid $border-color--accent
+    color: $text--color-dark
     max-width: 750px
     padding-left: 15px
     position: relative
@@ -24,8 +24,9 @@
     &::before
       color: $section-number--color-dark
       content: attr(data-section-number)
-      font-family: $font-family--secondary
-      font-size: 194px
+      font:
+        family: $font-family--secondary
+        size: 194px
       line-height: .75
       position: absolute
       top: 50%
@@ -42,18 +43,19 @@
 
   &__title
     color: inherit
-    font-family: $font-family--primary
-    font-size: 30px
-    font-weight: $font-weight--normal
+    font:
+      family: $font-family--primary
+      size: 30px
+      weight: $font-weight--normal
     line-height: 1.2
     margin-bottom: .5em
 
-
   &__subtitle
     color: $text--color-muted
-    font-family: $font-family--primary
-    font-size: 20px
-    font-weight: $font-weight--normal
+    font:
+      family: $font-family--primary
+      size: 20px
+      weight: $font-weight--normal
 
     &--light
       color: $section-subtitle--color--light

@@ -1,12 +1,46 @@
 .grid
   display: flex
+  flex: 0 1 auto
   flex-wrap: wrap
+  margin:
+    left: -15px
+    right: -15px
+
+  &--space-between
+    justify-content: space-between
+
+  &--around-md-between
+    justify-content: space-around
+
+    @include breakpoint(md)
+      justify-content: space-between
+
+  &--space-around
+    justify-content: space-around
 
   &__col
 
+    &-md-3
+      box-sizing: border-box
+      padding:
+        left: 15px
+        right: 15px
+
+      @include breakpoint(lg)
+        flex-basis: 25%
+        width: 25%
+
+    &-lg-4
+      box-sizing: border-box
+      padding:
+        left: 15px
+        right: 15px
+
+      @include breakpoint(md)
+        flex-basis: 33.33333%
+        width: 33.33333%
+
     &-md-6
-      flex-basis: 100%
-      width: 100%
       @include breakpoint(md)
         flex-basis: 50%
         width: 50%

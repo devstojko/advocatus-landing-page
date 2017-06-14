@@ -1,0 +1,69 @@
+.post
+  border-bottom: $border-color--accent 3px solid
+  margin-bottom: 50px
+  max-width: 370px
+
+  &__image
+    margin-bottom: 25px
+
+  &__title
+    color: $text--color-dark
+    font:
+      family: $font-family--primary
+      size: $text-size--medium
+      weight: $font-weight--normal
+
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+
+  &__author
+    color: $text--color-dark
+    font:
+      family: $font-family--secondary
+      size: $text-size--default
+      weight: $font-weight--normal
+
+    &::before
+      color: $text--color-muted
+      content: 'By'
+      font-style: italic
+      margin-right: 5px
+
+  &__date
+    color: $text--color-muted
+    font:
+      family: $font-family--secondary
+      size: $text-size--default
+      style: italic
+      weight: $font-weight--normal
+
+  &__text
+    color: $text--color-muted
+    font:
+      family: $font-family--secondary
+      size: $text-size--small
+      weight: $font-weight--normal
+    line-height: 2
+
+  &__cta
+    display: flex
+    justify-content: space-between
+    margin:
+      bottom: 25px
+      top: 25px
+
+  &__comments
+    color: $text--color-dark
+    font:
+      family: $font-family--secondary
+      size: $text-size--default
+      weight: $font-weight--normal
+
+  &__share
+    color: $text--color-dark
+    font:
+      family: $font-family--secondary
+      size: $text-size--default
+      weight: $font-weight--normal
