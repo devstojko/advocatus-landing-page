@@ -1,0 +1,38 @@
+.quote
+  position: relative
+
+  &::before
+    color: $text--color-muted
+    content: '\f10d'
+    font:
+      family: FontAwesome
+      size: 30px
+      weight: $font-weight--normal
+    left: -40px
+    position: absolute
+    top: 15px
+
+  &__text
+    color: $text--color-light
+    font:
+      family: $font-family--secondary
+      size: $text-size--small
+      weight: $font-weight--normal
+    line-height: 2
+    margin-bottom: 50px
+    padding-top: 20px
+
+  &__author
+    color: $text--color-light
+    font:
+      family: $font-family--primary
+      size: $text-size--medium
+      weight: $font-weight--normal
+    line-height: 1.5
+
+  &__job-role
+    color: $text--color-light
+    font:
+      family: $font-family--secondary
+      size: $text-size--small
+      weight: $font-weight--normal
