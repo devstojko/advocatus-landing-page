@@ -41,11 +41,16 @@
         width: 33.33333%
 
     &-md-6
+      box-sizing: border-box
       @include breakpoint(md)
         flex-basis: 50%
         width: 50%
+        padding:
+          left: 15px
+          right: 15px
 
     &-sm-6
+      box-sizing: border-box
       @include breakpoint(sm)
         align-content: center
         flex-basis: 50%

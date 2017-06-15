@@ -1,3 +1,5 @@
+$section-clients-bck: rgba($dark-color, .95)
+
 .section
   padding:
     bottom: 90px
@@ -8,6 +10,9 @@
 
   &--graphite
     background-color: $section--bck-graphite
+
+  &--clients
+    background: linear-gradient($section-clients-bck, $section-clients-bck), url('../images/client-section-bck.jpg')
 
   &__wrapper
     margin: 0 auto

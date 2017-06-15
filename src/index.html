@@ -230,9 +230,9 @@
       <div class="section section--clients">
         <div class="section__wrapper">
 
-          <div class="section__header" data-section-number="04">
+          <div class="section__header section__header--light" data-section-number="04">
             <h2 class="section__title">Our Clients Say</h2>
-            <p class="section__subtitle">
+            <p class="section__subtitle section__subtitle--light">
               We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
             </p>
           </div><!-- /.section__header -->
@@ -243,9 +243,9 @@
               <div class="slider__inner">
 
                 <div class="slider__item slider__item--active">
-                  <div class="slider__image">
-                    <img src="" alt="">
-                  </div>
+
+
+
 
                   <div class="slider__body quote">
                     <blockquote class="quote__text">
@@ -253,7 +253,7 @@
                     </blockquote>
 
                     <h4 class="quote__author">Alon Smith</h4>
-                    <p class="quote__job-position">CEO of AVC Group</p>
+                    <p class="quote__job-role">CEO of AVC Group</p>
 
                   </div>
                 </div>
@@ -289,13 +289,13 @@
 
                   </div>
                 </div>
+              </div>
 
               <ol class="slider__pagination">
-                <li class="slider__pagination-item"></li>
+                <li class="slider__pagination-item slider__pagination-item--active"></li>
                 <li class="slider__pagination-item"></li>
                 <li class="slider__pagination-item"></li>
               </ol>
-
             </div>
           </div><!-- /.section__content -->
 
@@ -490,31 +490,36 @@
           </div><!-- /.section__header -->
 
           <div class="section__content">
-            <form action="" class="contact-form">
-              <div class="contact-form__group">
-                <label for="name" class="contact-form__label sr-only">Name</label>
-                <input type="text" class="contact-form__text-input" placeholder="Enter your name...">
+
+            <div class="panel panel--box grid">
+              <form action="" class="contact-form grid__col-md-6">
+                <div class="contact-form__group">
+                  <label for="name" class="label sr-only">Name</label>
+                  <input type="text" class="input" placeholder="Enter your name...">
+                </div>
+
+                <div class="contact-form__group">
+                  <label for="email" class="label sr-only">Email</label>
+                  <input type="email" class="input" placeholder="Enter your email...">
+                </div>
+
+                <div class="contact-form__group">
+                  <label for="phone" class="label sr-only">Phone</label>
+                  <input type="tel" class="input" placeholder="Enter your phone...">
+                </div>
+
+                <div class="contact-form__group">
+                  <label for="message" class="label sr-only">Message</label>
+                  <textarea name="message" cols="30" rows="10" class="input" placeholder="Enter your message..."></textarea>
+                </div>
+
+                <button class="button button--primary">Send Message</button>
+
+              </form>
+
+              <div class="contact__map grid__col-md-6">
+                <img class="img-fluid" src="images/map.jpg" alt="">
               </div>
-
-              <div class="contact-form__group">
-                <label for="email" class="contact-form__label sr-only">Email</label>
-                <input type="email" class="contact-form__text-input" placeholder="Enter your email...">
-              </div>
-
-              <div class="contact-form__group">
-                <label for="phone" class="contact-form__label sr-only">Phone</label>
-                <input type="tel" class="contact-form__text-input" placeholder="Enter your phone...">
-              </div>
-
-              <div class="contact-form__group">
-                <label for="message" class="contact-form__label sr-only">Message</label>
-                <textarea name="message" cols="30" rows="10" class="contact-form__text-input" placeholder="Enter your message..."></textarea>
-              </div>
-
-            </form>
-
-            <div class="contact__map">
-              <img src="images/map.jpg" alt="">
             </div>
 
           </div><!-- /.section__content -->
@@ -523,22 +528,22 @@
     </main><!-- /.content -->
 
     <footer class="footer">
-      <div class="footer__section__wrapper">
+      <div class="footer__wrapper grid grid--space-between">
         <p class="footer__text">
           Copyright Symu.co
         </p>
         <div class="footer__list">
           <a href="" class="footer__list-item">
-            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
           </a>
           <a href="" class="footer__list-item">
-            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
           </a>
           <a href="" class="footer__list-item">
-            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
           </a>
           <a href="" class="footer__list-item">
-            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
         </div>
       </div><!-- /.footer__section__wrapper -->

@@ -1,0 +1,42 @@
+$slider-image-shadow-color: $accent-color
+$slider-pagination-border-color: $light-color
+$slider-pagination-fill-color: $light-color
+
+.slider
+  display: flex
+  flex-direction: column
+
+  &__inner
+    display: flex
+
+  &__item
+    display: none
+    flex-wrap: wrap
+
+    &--active
+      display: flex
+
+  &__image
+    box-shadow: 20px 20px $slider-image-shadow-color
+
+  &__body
+    margin-left: 100px
+
+  &__pagination
+    align-self: center
+    display: flex
+    margin-top: 50px
+
+    &-item
+      border: 1px solid $slider-pagination-border-color
+      border-radius: 50%
+      cursor: pointer
+      display: inline-block
+      height: 10px
+      width: 10px
+
+      &:not(:last-child)
+        margin-right: 10px
+
+      &--active
+        background-color: $slider-pagination-fill-color
