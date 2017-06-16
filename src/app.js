@@ -1,27 +1,36 @@
 import css from './styles/app.sass';
 
-console.log('index page');
+{
 
+  const faqList = document.getElementById('faqList');
+  const faqContent = document.getElementById('faqContent');
 
-const listItem = document.querySelector('.faq__list-item');
+  faqList.addEventListener('click', function(event) {
+    let faqTarget = event.target.dataset.faqTarget;
 
-listItem.addEventListener('click', () => {
-  listItem.classList.toggle('faq__list-item--selected');
-});
+    toggleFaq(faqTarget);
+  });
 
+  function toggleFaq(selected) {
 
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+    const targetClass = 'faq__list-item--selected';
+    const contentClass = 'faq__item--visible';
 
-  nameAge() {
-    console.log(this.name + this.age);
+    const targetElement = document.querySelector(`[data-faq-target="${selected}"]`);
+    const contentElement = document.querySelector(`[data-faq-id="${selected}"]`);
+
+    var sections = document.querySelectorAll('[data-faq-target]');
+    var contents = document.querySelectorAll('[data-faq-id]');
+    
+    for (var i = 0; i < sections.length; i++){
+
+        sections[i].classList.remove(targetClass);
+        contents[i].classList.remove(contentClass);
+
+    }
+
+    targetElement.classList.add(targetClass);
+    contentElement.classList.add(contentClass);
+    // contentElement.classList.add(contentClass);
   }
 }
-
-
-let nemanja = new Person('nemanja', 25);
-
-nemanja.nameAge();

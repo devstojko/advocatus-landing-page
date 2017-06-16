@@ -50,6 +50,7 @@ $faq-content-shadow-color: rgba($tacha, .32)
         content: '\f068'
 
   &__content
+    overflow: hidden
     background-color: $faq-content-bck
     border-radius: $faq-content-radius
     box-shadow: 0 12px 40px $faq-content-shadow-color
@@ -63,13 +64,18 @@ $faq-content-shadow-color: rgba($tacha, .32)
     display: flex
     left: 0
     margin: 40px
+    opacity: 0
+    overflow: auto
     padding-right: 20px
     position: absolute
     right: 0
     top: 0
-    overflow: auto
-    &:not(:first-child)
-      display: none
+    transform: translateX(30%)
+    transition: .5s ease-in-out
+
+    &--visible
+      opacity: 1
+      transform: none
 
   &__text
     color: $text--color-dark
