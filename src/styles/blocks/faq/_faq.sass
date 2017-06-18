@@ -9,9 +9,9 @@ $faq-content-shadow-color: rgba($tacha, .32)
     background-color: $color
 
 .faq
-  box-sizing: border-box
   display: flex
   flex-wrap: wrap
+  box-sizing: border-box
 
   &__list
     @include bck(red)
@@ -23,24 +23,24 @@ $faq-content-shadow-color: rgba($tacha, .32)
       right: 30px
 
   &__list-item
-    border-bottom: $border-color--accent 2px solid
+    display: flex
     box-sizing: border-box
     color: $text--color-light
     cursor: pointer
-    display: flex
+    border-bottom: $border-color--accent 2px solid
     font:
       family: $font-family--secondary
       size: $text-size--small
       weight: $font-weight--bold
     padding:
-      bottom: $faq-list-item-space
       top: $faq-list-item-space
+      bottom: $faq-list-item-space
 
     &::after
-      align-self: center
-      color: $text--color-light
       content: '\f067'
+      align-self: center
       font-family: FontAwesome
+      color: $text--color-light
       margin-left: auto
 
 
@@ -50,26 +50,26 @@ $faq-content-shadow-color: rgba($tacha, .32)
         content: '\f068'
 
   &__content
-    overflow: hidden
-    background-color: $faq-content-bck
-    border-radius: $faq-content-radius
-    box-shadow: 0 12px 40px $faq-content-shadow-color
-    box-sizing: border-box
     display: flex
     flex-basis: 50%
+    box-sizing: border-box
     position: relative
+    background-color: $faq-content-bck
+    box-shadow: 0 12px 40px $faq-content-shadow-color
+    border-radius: $faq-content-radius
+    overflow: hidden
 
   &__item
-    bottom: 0
     display: flex
+    position: absolute
+    top: 0
+    bottom: 0
     left: 0
+    right: 0
+    padding-right: 20px
     margin: 40px
     opacity: 0
     overflow: auto
-    padding-right: 20px
-    position: absolute
-    right: 0
-    top: 0
     transform: translateX(30%)
     transition: .5s ease-in-out
 

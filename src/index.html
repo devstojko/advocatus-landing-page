@@ -1,553 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400, 400i,700|Playfair+Display:400,700" rel="stylesheet">
-    <script src="https://use.fontawesome.com/e111d754c7.js"></script>
-    <title>Basic wp2 boilerplate.</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400, 400i,700|Playfair+Display:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/e111d754c7.js"></script>
+  <title>Basic wp2 boilerplate.</title>
 </head>
+
 <body>
 
-    <header class="header">
-      <div class="header__wrapper">
+  <header class="header">
+    <div class="header__wrapper">
 
-        <div class="header__logo">
-          <a href="index.html" class="logo">Advocatus</a>
+      <div class="header__logo">
+        <a href="index.html" class="logo">Advocatus</a>
+      </div>
+
+      <nav class="header__menu nav">
+        <a href="#" class="nav__link">About us</a>
+        <a href="#" class="nav__link">Practice area</a>
+        <a href="#" class="nav__link">Lawyers</a>
+        <a href="#" class="nav__link">Publications</a>
+        <a href="#" class="nav__link">Faq</a>
+        <a href="#" class="nav__link">Contact</a>
+      </nav>
+      <!-- /.header__menu -->
+
+      <div class="header__toggle burger">
+        <span class="burger__line burger__line--top"></span>
+        <span class="burger__line burger__line--middle"></span>
+        <span class="burger__line burger__line--btm"></span>
+      </div>
+      <!-- /.header__toggle -->
+
+    </div>
+    <!-- /.section__wrapper -->
+  </header>
+  <!-- /.header -->
+
+  <main class="content">
+
+    <div class="hero">
+      <div class="hero__content">
+
+        <div class="hero__header">
+          <h1 class="hero__title">Nemanja Stojkovic</h1>
+          <span class="hero__subtitle">Lawyer</span>
         </div>
 
-        <nav class="header__menu nav">
-          <a href="#" class="nav__link">About us</a>
-          <a href="#" class="nav__link">Practice area</a>
-          <a href="#" class="nav__link">Lawyers</a>
-          <a href="#" class="nav__link">Publications</a>
-          <a href="#" class="nav__link">Faq</a>
-          <a href="#" class="nav__link">Contact</a>
-        </nav><!-- /.header__menu -->
+        <div class="hero__cta">
+          <a href="#" class="hero__button button button--primary">Contact Me</a>
+        </div>
 
-        <div class="header__toggle burger">
-          <span class="burger__line burger__line--top"></span>
-          <span class="burger__line burger__line--middle"></span>
-          <span class="burger__line burger__line--btm"></span>
-        </div><!-- /.header__toggle -->
+      </div>
+    </div>
+    <!-- /.hero -->
 
-      </div><!-- /.section__wrapper -->
-    </header><!-- /.header -->
+    <div class="section section--light">
+      <div class="section__wrapper">
 
-    <main class="content">
+        <div class="section__header" data-section-number="01">
+          <h2 class="section__title">About us</h2>
+          <p class="section__subtitle">
+            We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
+          </p>
+        </div>
+        <!-- /.section__header -->
 
-      <div class="hero">
-        <div class="hero__content">
+        <div class="section__content grid">
 
-          <div class="hero__header">
-            <h1 class="hero__title">Nemanja Stojkovic</h1>
-            <span class="hero__subtitle">Lawyer</span>
+          <div class="grid__col-md-6">
+            <div class="card">
+              <h3 class="card__title">History</h3>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien dictum.
+                </li>
+                <li class="card__list-item">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                </li>
+                <li class="card__list-item">
+                  In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien.
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div class="hero__cta">
-            <a href="#" class="hero__button button button--primary">Contact Me</a>
+          <div class="grid__col-md-6">
+            <div class="card">
+              <h3 class="card__title">Experties</h3>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                est Lorem.
+              </p>
+            </div>
           </div>
 
         </div>
-      </div><!-- /.hero -->
+        <!-- /.section__content -->
+      </div>
+      <!-- /section__wrapper -->
+    </div>
+    <!-- /.section -->
 
-      <div class="section section--light">
-        <div class="section__wrapper">
+    <div class="section section--graphite">
+      <div class="section__wrapper">
 
-          <div class="section__header" data-section-number="01">
-            <h2 class="section__title">About us</h2>
-            <p class="section__subtitle">
-              We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
-            </p>
-          </div><!-- /.section__header -->
+        <div class="section__header section__header--light" data-section-number="02">
+          <h2 class="section__title">Practis Area</h2>
+          <p class="section__subtitle section__subtitle--light">
+            We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
+          </p>
+        </div>
+        <!-- /.section__header -->
 
-          <div class="section__content grid">
+        <div class="section__content grid grid--around-md-between">
 
-            <div class="grid__col-md-6">
-              <div class="card">
-                <h3 class="card__title">History</h3>
-                <ul class="card__list">
-                  <li class="card__list-item">
-                    In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien dictum.
-                  </li>
-                  <li class="card__list-item">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-                  </li>
-                  <li class="card__list-item">
-                    In hac habitasse platea dictumst Nunc ultricies iaculis luctus Aliquam eget eros eget sapien.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="grid__col-md-6">
-              <div class="card">
-                <h3 class="card__title">Experties</h3>
-                <p class="card__text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.
-                </p>
-              </div>
-            </div>
-
-          </div><!-- /.section__content -->
-        </div><!-- /section__wrapper -->
-      </div><!-- /.section -->
-
-      <div class="section section--graphite">
-        <div class="section__wrapper">
-
-          <div class="section__header section__header--light" data-section-number="02">
-            <h2 class="section__title">Practis Area</h2>
-            <p class="section__subtitle section__subtitle--light">
-              We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
-            </p>
-          </div><!-- /.section__header -->
-
-          <div class="section__content grid grid--around-md-between">
-
-            <div class="grid__col-md-6">
-              <div class="media">
-                <div class="media__left">
-                  <span class="media__icon">
+          <div class="grid__col-md-6">
+            <div class="media">
+              <div class="media__left">
+                <span class="media__icon">
                     <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
                   </span>
-                </div>
-                <div class="media__body">
-                  <h4 class="media__title">
+              </div>
+              <div class="media__body">
+                <h4 class="media__title">
                     Private Client Service
                   </h4>
-                  <p class="media__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorbergren, no sea takimata sanctus est Lorem.
-                  </p>
-                </div>
+                <p class="media__text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                  sanctus est Lorem.Lorbergren, no sea takimata sanctus est Lorem.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="grid__col-md-6">
-              <div class="media">
-                <div class="media__left">
-                  <span class="media__icon">
+          <div class="grid__col-md-6">
+            <div class="media">
+              <div class="media__left">
+                <span class="media__icon">
                     <i class="fa fa-wrench fa-3x" aria-hidden="true"></i>
                   </span>
-                </div>
-                <div class="media__body">
-                  <h4 class="media__title media__title--capitalize">
+              </div>
+              <div class="media__body">
+                <h4 class="media__title media__title--capitalize">
                     Labour and employment
                   </h4>
-                  <p class="media__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sancta kasd gubergren, no sea asdijasdasnasnd asnasdlasndnas lorem ipsum dolor.
-                  </p>
-                </div>
+                <p class="media__text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                  sancta kasd gubergren, no sea asdijasdasnasnd asnasdlasndnas lorem ipsum dolor.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="grid__col-md-6">
-              <div class="media">
-                <div class="media__left">
-                  <span class="media__icon">
+          <div class="grid__col-md-6">
+            <div class="media">
+              <div class="media__left">
+                <span class="media__icon">
                     <i class="fa fa-desktop fa-3x" aria-hidden="true"></i>
                   </span>
-                </div>
-                <div class="media__body">
-                  <h4 class="media__title">Cyber Sequre</h4>
-                  <p class="media__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum.
-                  </p>
-                </div>
+              </div>
+              <div class="media__body">
+                <h4 class="media__title">Cyber Sequre</h4>
+                <p class="media__text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="grid__col-md-6">
-              <div class="media">
-                <div class="media__left">
-                  <span class="media__icon">
+          <div class="grid__col-md-6">
+            <div class="media">
+              <div class="media__left">
+                <span class="media__icon">
                     <i class="fa fa-home fa-3x" aria-hidden="true"></i>
                   </span>
-                </div>
-                <div class="media__body">
-                  <h4 class="media__title">Real Estate</h4>
-                  <p class="media__text">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing eli.
-                  </p>
-                </div>
               </div>
-            </div>
-
-          </div><!-- /.section__content -->
-        </div><!-- /section__wrapper -->
-      </div><!-- /.section -->
-
-      <div class="section section--light">
-        <div class="section__wrapper">
-
-          <div class="section__header" data-section-number="03">
-            <h2 class="section__title">Meet Our Attorney</h2>
-            <p class="section__subtitle">
-              We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
-            </p>
-          </div><!-- /.section__header -->
-
-          <div class="section__content grid grid--around-md-between">
-
-            <div class="grid__col-md-3">
-              <div class="card">
-                <img src="images/members/member-1.jpg" alt="" class="card__image img-fluid">
-                <h3 class="card__title">Adam Suarez</h3>
-                <p class="card__subtitle">Attorney General</p>
-              </div>
-            </div>
-
-            <div class="grid__col-md-3">
-              <div class="card">
-                <img src="images/members/member-2.jpg" alt="" class="card__image img-fluid">
-                <h3 class="card__title">Lina Suarez</h3>
-                <p class="card__subtitle">Attorney General</p>
-              </div>
-            </div>
-
-            <div class="grid__col-md-3">
-              <div class="card">
-                <img src="images/members/member-3.jpg" alt="" class="card__image img-fluid">
-                <h3 class="card__title">Jems Snow</h3>
-                <p class="card__subtitle">Attorney General</p>
-              </div>
-            </div>
-
-            <div class="grid__col-md-3">
-              <div class="card">
-                <img src="images/members/member-4.jpg" alt="" class="card__image img-fluid">
-                <h3 class="card__title">Linister White</h3>
-                <p class="card__subtitle">Attorney General</p>
-              </div>
-            </div>
-
-          </div><!-- /.section__content -->
-        </div><!-- /section__wrapper -->
-      </div><!-- /.section -->
-
-      <div class="section section--clients">
-        <div class="section__wrapper">
-
-          <div class="section__header section__header--light" data-section-number="04">
-            <h2 class="section__title">Our Clients Say</h2>
-            <p class="section__subtitle section__subtitle--light">
-              We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
-            </p>
-          </div><!-- /.section__header -->
-
-          <div class="section__content">
-            <div class="slider">
-
-              <div class="slider__inner">
-
-                <div class="slider__item slider__item--active">
-
-
-
-
-                  <div class="slider__body quote">
-                    <blockquote class="quote__text">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.
-                    </blockquote>
-
-                    <h4 class="quote__author">Alon Smith</h4>
-                    <p class="quote__job-role">CEO of AVC Group</p>
-
-                  </div>
-                </div>
-
-                <div class="slider__item">
-                  <div class="slider__image">
-                    <!-- <img src="" alt=""> -->
-                  </div>
-
-                  <div class="slider__body quote">
-                    <blockquote class="quote__text">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.
-                    </blockquote>
-
-                    <h4 class="quote__author">Alon Smith</h4>
-                    <p class="quote__job-role">CEO of AVC Group</p>
-
-                  </div>
-                </div>
-
-                <div class="slider__item">
-                  <div class="slider__image">
-                    <!-- <img src="" alt=""> -->
-                  </div>
-
-                  <div class="slider__body quote">
-                    <blockquote class="quote__text">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem.
-                    </blockquote>
-
-                    <h4 class="quote__author">Alon Smith</h4>
-                    <p class="quote__job-position">CEO of AVC Group</p>
-
-                  </div>
-                </div>
-              </div>
-
-              <ol class="slider__pagination">
-                <li class="slider__pagination-item slider__pagination-item--active"></li>
-                <li class="slider__pagination-item"></li>
-                <li class="slider__pagination-item"></li>
-              </ol>
-            </div>
-          </div><!-- /.section__content -->
-
-        </div><!-- /section__wrapper -->
-      </div><!-- /.section -->
-
-      <div class="section section--light">
-        <div class="section__wrapper">
-
-          <div class="section__header" data-section-number="05">
-            <h2 class="section__title">Recent Publications</h2>
-            <p class="section__subtitle">
-              We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
-            </p>
-          </div><!-- /.section__header -->
-
-          <div class="section__content grid grid--around-md-between">
-
-            <div class="grid__col-lg-4">
-              <div class="post">
-                <img src="images/posts/post-img-1.jpg"  alt="" class="post__image img-fluid">
-                <h3 class="post__title">Publication Tite</h3>
-                <div class="post__info">
-                  <span class="post__author">Adam Suarez</span>
-                  <span class="post__date">12 Nov, 2015</span>
-                </div>
-
-                <p class="post__text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                </p>
-
-                <div class="post__cta">
-                  <div class="post__comments">
-                    <i class="fa fa-comments" aria-hidden="true"></i>
-                    29 Comments
-                  </div>
-
-                  <div class="post__share">
-                    <i class="fa fa-share" aria-hidden="true"></i>
-                    Share
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid__col-lg-4">
-              <div class="post">
-                <img src="images/posts/post-img-2.jpg" alt="" class="post__image img-fluid">
-
-                <h3 class="post__title">Publication Tite</h3>
-
-                <div class="post__info">
-                  <span class="post__author">Adam Suarez</span>
-                  <span class="post__date">12 Nov, 2015</span>
-                </div>
-
-                <p class="post__text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                </p>
-
-                <div class="post__cta">
-                  <div class="post__comments">
-                    <i class="fa fa-comments" aria-hidden="true"></i>
-                    29 Comments
-                  </div>
-
-                  <div class="post__share">
-                    <i class="fa fa-share" aria-hidden="true"></i>
-                    Share
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid__col-lg-4">
-              <div class="post">
-                <img src="images/posts/post-img-3.jpg" alt="" class="post__image img-fluid">
-
-                <h3 class="post__title">Publication Tite</h3>
-
-                <div class="post__info">
-                  <span class="post__author">Adam Suarez</span>
-                  <span class="post__date">12 Nov, 2015</span>
-                </div>
-
-                <p class="post__text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                </p>
-
-                <div class="post__cta">
-                  <div class="post__comments">
-                    <i class="fa fa-comments" aria-hidden="true"></i>
-                    29 Comments
-                  </div>
-
-                  <div class="post__share">
-                    <i class="fa fa-share" aria-hidden="true"></i>
-                    Share
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div><!-- /.section__content -->
-        </div><!-- /section__wrapper -->
-      </div><!-- /.section -->
-
-      <div class="section section--graphite">
-        <div class="section__wrapper">
-
-          <div class="section__header section__header--light" data-section-number="06">
-            <h2 class="section__title">Frequently asked questions</h2>
-            <p class="section__subtitle section__subtitle--light">
-              We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
-            </p>
-          </div><!-- /.section__header -->
-
-          <div class="section__content faq">
-
-            <ul id="faqList" class="faq__list">
-              <li class="faq__list-item" data-faq-target="1">What paperwork do I need to complete to file for divorce?</li>
-              <li class="faq__list-item" data-faq-target="2">
-                How do I change my custody and suport orders?
-              </li>
-              <li class="faq__list-item" data-faq-target="3">
-                How to make a General Diary?
-              </li>
-              <li class="faq__list-item" data-faq-target="4">
-                What paperwork do I need to complete to file for divorce?
-              </li>
-              <li class="faq__list-item" data-faq-target="5">
-                How do I protect a business name?
-              </li>
-              <li class="faq__list-item" data-faq-target="6">
-                Should I incorporate my business?
-              </li>
-            </ul>
-
-            <div id="faqContent" class="faq__content">
-
-              <div class="faq__item" data-faq-id="1">
-                <p class="faq__text">
-                  1111111Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                  Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              <div class="media__body">
+                <h4 class="media__title">Real Estate</h4>
+                <p class="media__text">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                  sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing eli.
                 </p>
               </div>
+            </div>
+          </div>
 
-              <div class="faq__item" data-faq-id="2">
-                <p class="faq__text">
-                  222222Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
+        </div>
+        <!-- /.section__content -->
+      </div>
+      <!-- /section__wrapper -->
+    </div>
+    <!-- /.section -->
+
+    <div class="section section--light">
+      <div class="section__wrapper">
+
+        <div class="section__header" data-section-number="03">
+          <h2 class="section__title">Meet Our Attorney</h2>
+          <p class="section__subtitle">
+            We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
+          </p>
+        </div>
+        <!-- /.section__header -->
+
+        <div class="section__content grid grid--around-md-between">
+
+          <div class="grid__col-md-3">
+            <div class="card">
+              <img src="images/members/member-1.jpg" alt="" class="card__image img-fluid">
+              <h3 class="card__title">Adam Suarez</h3>
+              <p class="card__subtitle">Attorney General</p>
+            </div>
+          </div>
+
+          <div class="grid__col-md-3">
+            <div class="card">
+              <img src="images/members/member-2.jpg" alt="" class="card__image img-fluid">
+              <h3 class="card__title">Lina Suarez</h3>
+              <p class="card__subtitle">Attorney General</p>
+            </div>
+          </div>
+
+          <div class="grid__col-md-3">
+            <div class="card">
+              <img src="images/members/member-3.jpg" alt="" class="card__image img-fluid">
+              <h3 class="card__title">Jems Snow</h3>
+              <p class="card__subtitle">Attorney General</p>
+            </div>
+          </div>
+
+          <div class="grid__col-md-3">
+            <div class="card">
+              <img src="images/members/member-4.jpg" alt="" class="card__image img-fluid">
+              <h3 class="card__title">Linister White</h3>
+              <p class="card__subtitle">Attorney General</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.section__content -->
+      </div>
+      <!-- /section__wrapper -->
+    </div>
+    <!-- /.section -->
+
+    <div class="section section--clients">
+      <div class="section__wrapper">
+
+        <div class="section__header section__header--light" data-section-number="04">
+          <h2 class="section__title">Our Clients Say</h2>
+          <p class="section__subtitle section__subtitle--light">
+            We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
+          </p>
+        </div>
+        <!-- /.section__header -->
+
+        <div class="section__content">
+          <div class="slider">
+
+            <div class="slider__inner">
+
+              <div class="slider__item slider__item--active">
+
+
+
+
+                <div class="slider__body quote">
+                  <blockquote class="quote__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem.
+                  </blockquote>
+
+                  <h4 class="quote__author">Alon Smith</h4>
+                  <p class="quote__job-role">CEO of AVC Group</p>
+
+                </div>
               </div>
 
-              <div class="faq__item" data-faq-id="3">
-                <p class="faq__text">
-                  33333Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
+              <div class="slider__item">
+                <div class="slider__image">
+                  <!-- <img src="" alt=""> -->
+                </div>
+
+                <div class="slider__body quote">
+                  <blockquote class="quote__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem.
+                  </blockquote>
+
+                  <h4 class="quote__author">Alon Smith</h4>
+                  <p class="quote__job-role">CEO of AVC Group</p>
+
+                </div>
               </div>
 
-              <div class="faq__item" data-faq-id="4">
-                <p class="faq__text">
-                  44444Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
-              </div>
+              <div class="slider__item">
+                <div class="slider__image">
+                  <!-- <img src="" alt=""> -->
+                </div>
 
-              <div class="faq__item" data-faq-id="5">
-                <p class="faq__text">
-                  55555Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
-              </div>
+                <div class="slider__body quote">
+                  <blockquote class="quote__text">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. ut labore et dolore magna aliquyam erat, sed diam voluptua. et ea rebum. Stet clita kasd gubergren, no sea takimata
+                    sanctus est Lorem.
+                  </blockquote>
 
-              <div class="faq__item" data-faq-id="6">
-                <p class="faq__text">
-                  66666Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
-              </div>
+                  <h4 class="quote__author">Alon Smith</h4>
+                  <p class="quote__job-position">CEO of AVC Group</p>
 
+                </div>
+              </div>
             </div>
 
-          </div><!-- /.section__content -->
-        </div><!-- /section__wrapper -->
-      </div><!-- /.section -->
+            <ol class="slider__pagination">
+              <li class="slider__pagination-item slider__pagination-item--active"></li>
+              <li class="slider__pagination-item"></li>
+              <li class="slider__pagination-item"></li>
+            </ol>
+          </div>
+        </div>
+        <!-- /.section__content -->
 
-      <div class="section section--light">
-        <div class="section__wrapper">
+      </div>
+      <!-- /section__wrapper -->
+    </div>
+    <!-- /.section -->
 
-          <div class="section__header" data-section-number="07">
-            <h2 class="section__title">Feel Free to Contact</h2>
-            <p class="section__subtitle">
-              We are regarded as industry leade  as industry leade  as industry leade  as industry leade  as industry leade  as industry leade
-            </p>
-          </div><!-- /.section__header -->
+    <div class="section section--light">
+      <div class="section__wrapper">
 
-          <div class="section__content">
+        <div class="section__header" data-section-number="05">
+          <h2 class="section__title">Recent Publications</h2>
+          <p class="section__subtitle">
+            We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
+          </p>
+        </div>
+        <!-- /.section__header -->
 
-            <div class="panel panel--box grid">
-              <form action="" class="form grid__col-md-6">
-                <div class="form__group">
-                  <label for="name" class="label sr-only">Name</label>
-                  <input type="text" class="input" placeholder="Enter your name...">
+        <div class="section__content grid grid--around-md-between">
+
+          <div class="grid__col-lg-4">
+            <div class="post">
+              <img src="images/posts/post-img-1.jpg" alt="" class="post__image img-fluid">
+              <h3 class="post__title">Publication Tite</h3>
+              <div class="post__info">
+                <span class="post__author">Adam Suarez</span>
+                <span class="post__date">12 Nov, 2015</span>
+              </div>
+
+              <p class="post__text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              </p>
+
+              <div class="post__cta">
+                <div class="post__comments">
+                  <i class="fa fa-comments" aria-hidden="true"></i> 29 Comments
                 </div>
 
-                <div class="form__group">
-                  <label for="email" class="label sr-only">Email</label>
-                  <input type="email" class="input" placeholder="Enter your email...">
+                <div class="post__share">
+                  <i class="fa fa-share" aria-hidden="true"></i> Share
                 </div>
-
-                <div class="form__group">
-                  <label for="phone" class="label sr-only">Phone</label>
-                  <input type="tel" class="input" placeholder="Enter your phone...">
-                </div>
-
-                <div class="form__group">
-                  <label for="message" class="label sr-only">Message</label>
-                  <textarea name="message" cols="30" rows="10" class="input input--textarea" placeholder="Enter your message..."></textarea>
-                </div>
-
-                <button class="button button--primary">Send Message</button>
-
-              </form>
-
-              <div class="form__map grid__col-md-6">
-                <img class="img-fluid" src="images/map.jpg" alt="">
               </div>
             </div>
+          </div>
 
-          </div><!-- /.section__content -->
-        </div><!-- /section__wrapper -->
-      </div><!-- /.section -->
-    </main><!-- /.content -->
+          <div class="grid__col-lg-4">
+            <div class="post">
+              <img src="images/posts/post-img-2.jpg" alt="" class="post__image img-fluid">
 
-    <footer class="footer">
-      <div class="footer__wrapper grid grid--space-between">
-        <p class="footer__text">
-          Copyright Symu.co
-        </p>
-        <div class="footer__list">
-          <a href="" class="footer__list-item">
+              <h3 class="post__title">Publication Tite</h3>
+
+              <div class="post__info">
+                <span class="post__author">Adam Suarez</span>
+                <span class="post__date">12 Nov, 2015</span>
+              </div>
+
+              <p class="post__text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              </p>
+
+              <div class="post__cta">
+                <div class="post__comments">
+                  <i class="fa fa-comments" aria-hidden="true"></i> 29 Comments
+                </div>
+
+                <div class="post__share">
+                  <i class="fa fa-share" aria-hidden="true"></i> Share
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__col-lg-4">
+            <div class="post">
+              <img src="images/posts/post-img-3.jpg" alt="" class="post__image img-fluid">
+
+              <h3 class="post__title">Publication Tite</h3>
+
+              <div class="post__info">
+                <span class="post__author">Adam Suarez</span>
+                <span class="post__date">12 Nov, 2015</span>
+              </div>
+
+              <p class="post__text">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              </p>
+
+              <div class="post__cta">
+                <div class="post__comments">
+                  <i class="fa fa-comments" aria-hidden="true"></i> 29 Comments
+                </div>
+
+                <div class="post__share">
+                  <i class="fa fa-share" aria-hidden="true"></i> Share
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.section__content -->
+      </div>
+      <!-- /section__wrapper -->
+    </div>
+    <!-- /.section -->
+
+    <div class="section section--graphite">
+      <div class="section__wrapper">
+
+        <div class="section__header section__header--light" data-section-number="06">
+          <h2 class="section__title">Frequently asked questions</h2>
+          <p class="section__subtitle section__subtitle--light">
+            We are regarded as industry leaders in stunning website solutions, focused on delivering unsurpassed user experiences.
+          </p>
+        </div>
+        <!-- /.section__header -->
+
+        <div class="section__content faq">
+
+          <ul id="faqList" class="faq__list">
+            <li class="faq__list-item" data-faq-target="1">What paperwork do I need to complete to file for divorce?</li>
+            <li class="faq__list-item" data-faq-target="2">
+              How do I change my custody and suport orders?
+            </li>
+            <li class="faq__list-item" data-faq-target="3">
+              How to make a General Diary?
+            </li>
+            <li class="faq__list-item" data-faq-target="4">
+              What paperwork do I need to complete to file for divorce?
+            </li>
+            <li class="faq__list-item" data-faq-target="5">
+              How do I protect a business name?
+            </li>
+            <li class="faq__list-item" data-faq-target="6">
+              Should I incorporate my business?
+            </li>
+          </ul>
+
+          <div id="faqContent" class="faq__content">
+
+            <div class="faq__item" data-faq-id="1">
+              <p class="faq__text">
+                1111111Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                content here', making it look like readable English. Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              </p>
+            </div>
+
+            <div class="faq__item" data-faq-id="2">
+              <p class="faq__text">
+                222222Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                content here', making it look like readable English.
+              </p>
+            </div>
+
+            <div class="faq__item" data-faq-id="3">
+              <p class="faq__text">
+                33333Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                here', making it look like readable English.
+              </p>
+            </div>
+
+            <div class="faq__item" data-faq-id="4">
+              <p class="faq__text">
+                44444Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                here', making it look like readable English.
+              </p>
+            </div>
+
+            <div class="faq__item" data-faq-id="5">
+              <p class="faq__text">
+                55555Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                here', making it look like readable English.
+              </p>
+            </div>
+
+            <div class="faq__item" data-faq-id="6">
+              <p class="faq__text">
+                66666Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                here', making it look like readable English.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /.section__content -->
+      </div>
+      <!-- /section__wrapper -->
+    </div>
+    <!-- /.section -->
+
+    <div class="section section--light">
+      <div class="section__wrapper">
+
+        <div class="section__header" data-section-number="07">
+          <h2 class="section__title">Feel Free to Contact</h2>
+          <p class="section__subtitle">
+            We are regarded as industry leade as industry leade as industry leade as industry leade as industry leade as industry leade
+          </p>
+        </div>
+        <!-- /.section__header -->
+
+        <div class="section__content">
+
+          <div class="panel panel--box grid">
+            <form action="" class="form grid__col-md-6">
+              <div class="form__group">
+                <label for="name" class="label sr-only">Name</label>
+                <input type="text" class="input" placeholder="Enter your name...">
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="label sr-only">Email</label>
+                <input type="email" class="input" placeholder="Enter your email...">
+              </div>
+
+              <div class="form__group">
+                <label for="phone" class="label sr-only">Phone</label>
+                <input type="tel" class="input" placeholder="Enter your phone...">
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="label sr-only">Message</label>
+                <textarea name="message" cols="30" rows="10" class="input input--textarea" placeholder="Enter your message..."></textarea>
+              </div>
+
+              <button class="button button--primary">Send Message</button>
+
+            </form>
+
+            <div class="form__map grid__col-md-6">
+              <img class="img-fluid" src="images/map.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+        <!-- /.section__content -->
+      </div>
+      <!-- /section__wrapper -->
+    </div>
+    <!-- /.section -->
+  </main>
+  <!-- /.content -->
+
+  <footer class="footer">
+    <div class="footer__wrapper grid grid--space-between">
+      <p class="footer__text">
+        Copyright Symu.co
+      </p>
+      <div class="footer__list">
+        <a href="" class="footer__list-item">
             <i class="fa fa-facebook" aria-hidden="true"></i>
           </a>
-          <a href="" class="footer__list-item">
+        <a href="" class="footer__list-item">
             <i class="fa fa-twitter" aria-hidden="true"></i>
           </a>
-          <a href="" class="footer__list-item">
+        <a href="" class="footer__list-item">
             <i class="fa fa-google-plus" aria-hidden="true"></i>
           </a>
-          <a href="" class="footer__list-item">
+        <a href="" class="footer__list-item">
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
-        </div>
-      </div><!-- /.footer__section__wrapper -->
-    </footer><!-- /.footer -->
+      </div>
+    </div>
+    <!-- /.footer__section__wrapper -->
+  </footer>
+  <!-- /.footer -->
 
 </body>
+
 </html>

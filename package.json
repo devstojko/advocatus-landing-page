@@ -34,5 +34,8 @@
   "browserslist": [
     "> 5%",
     "last 20 versions"
-  ]
+  ],
+  "dependencies": {
+    "babel-polyfill": "^6.23.0"
+  }
 }
